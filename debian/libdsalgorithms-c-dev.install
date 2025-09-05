@@ -1,0 +1,3 @@
+usr/include/dsalgorithms-c/*.h
+usr/lib/*/libdsalgorithms-c.a
+usr/lib/*/libdsalgorithms-c.so

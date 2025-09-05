@@ -1,0 +1,27 @@
+Source: dsalgorithms-c
+Section: libs
+Priority: optional
+Maintainer: Alexandre De Freitas <alexandre.b.defreitas@gmail.com>
+Build-Depends: debhelper-compat (= 13), cmake (>= 3.10), build-essential
+Standards-Version: 4.6.0
+Homepage: https://github.com/AlexDF/dsalgorithms-c
+
+Package: libdsalgorithms-c0
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Data Structures and Algorithms Library - runtime
+ dsalgorithms-c is a C library of various data structures 
+ and algorithms.
+ .
+ This package contains the shared library.
+
+Package: libdsalgorithms-c-dev
+Architecture: any
+Section: libdevel
+Depends: libdsalgorithms-c0 (= ${binary:Version}), ${misc:Depends}
+Description: Data Structures and Algorithms Library - development files
+ dsalgorithms-c is a C library of various data structures 
+ and algorithms.
+ .
+ This package contains the development files (headers and static library).

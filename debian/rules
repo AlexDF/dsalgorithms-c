@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+# Enable hardening flags
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	git submodule update --init --recursive
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib/$(DEB_HOST_MULTIARCH) \
+		-DBUILD_TESTS=ON
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vshlibs:Depends="libc6 (>= 2.17)"
+
+override_dh_shlibdeps:
+	dh_shlibdeps -l$(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)

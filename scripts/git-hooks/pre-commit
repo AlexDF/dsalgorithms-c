@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Running tests before commit..."
+
+# Build project
+make build-local
+
+# Run tests
+if make test-local; then
+  echo "✅ All tests passed!"
+  exit 0
+else
+  echo "❌ Test(s) failed! Commit aborted."
+  exit 1
+fi

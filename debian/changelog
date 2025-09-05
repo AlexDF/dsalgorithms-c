@@ -1,0 +1,8 @@
+dsalgorithms-c (0.1.0~alpha1-1) UNRELEASED; urgency=low
+
+  * Initial alpha release
+  * Includes Max and dsalgorithms-c modules.
+  * Max module currently has maxOf and maxArray only.
+  * Header files installed under include/dsalgorithms-c.
+
+ -- Alexandre De Freitas <alexandre.b.defreitas@gmail.com>  Fri, 29 Aug 2025 12:32:07 -0400

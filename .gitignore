@@ -1,0 +1,24 @@
+# MacOS
+.DS_Store
+
+# Visual Studio Code
+*.code-workspace
+
+# Test program executables
+tests/test
+tests/test-static
+
+# Local build directory
+build/
+
+# Debian build artifacts
+releases/
+obj-*/
+debian/tmp/
+debian/.debhelper/
+debian/files
+debian/debhelper-build-stamp
+./libdsalgorithms-c*
+
+# Doxygen docs
+docs/
