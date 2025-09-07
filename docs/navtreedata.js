@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "dsalgorithms-c", "index.html", [
+    [ "Documentation", "index.html#autotoc_md1", null ],
+    [ "Quick Install (Debian-based distros)", "index.html#autotoc_md2", null ],
+    [ "Uninstallation", "index.html#autotoc_md3", null ],
+    [ "Usage", "index.html#autotoc_md4", null ],
+    [ "API", "index.html#autotoc_md5", [
+      [ "Maximum Algorithms", "index.html#autotoc_md6", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [

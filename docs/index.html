@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dsalgorithms-c: Main Page</title>
+<title>dsalgorithms-c: dsalgorithms-c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,48 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">dsalgorithms-c Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">dsalgorithms-c </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a>A C library of data structures and algorithms.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Documentation</h1>
+<p>You can find the full API documentation for dsalgorithms-c <a href="https://alexdf.github.io/dsalgorithms-c/index.html">here</a></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Quick Install (Debian-based distros)</h1>
+<p>Download installer script via wget: </p><div class="fragment"><div class="line">wget https://github.com/AlexDF/dsalgorithms-c/releases/download/v0.1.0.alpha1-1/install_dsalgorithms-c_debian_amd64_arm64.sh</div>
+</div><!-- fragment --><p>or, via curl: </p><div class="fragment"><div class="line">curl -L -O https://github.com/AlexDF/dsalgorithms-c/releases/download/v0.1.0.alpha1-1/install_dsalgorithms-c_debian_amd64_arm64.sh</div>
+</div><!-- fragment --><p>Give it executable permissions and run: </p><div class="fragment"><div class="line">chmod +x install_dsalgorithms-c_debian_amd64_arm64.sh &amp;&amp; ./install_dsalgorithms-c_debian_amd64_arm64.sh</div>
+</div><!-- fragment --><p>The installer script will download the latest release packages, install via apt-get, and clean up downloaded files after installation.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Uninstallation</h1>
+<p>If the above script was used to install, or if you installed .deb packagas manually via apt: </p><div class="fragment"><div class="line">sudo apt remove libdsalgorithms-c0 libdsalgorithms-c-dev</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Usage</h1>
+<p>Library functions are prefixed with 'dsalgorithms_': </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dsalgorithms-c_8h.html">dsalgorithms-c/dsalgorithms-c.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> array[] = { 4, 7 ,5 };</div>
+<div class="line"><span class="keywordtype">size_t</span> arraySize = <span class="keyword">sizeof</span>(array) / <span class="keyword">sizeof</span>(array[0]);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> maxElement = <a class="code hl_function" href="dsalgorithms-c_8h.html#a606da9899ac87a3e7c13e69c672091f3">dsalgorithms_maxArrayInt</a>(array, arraySize);</div>
+<div class="line"><span class="comment">// maxElement equals 7</span></div>
+<div class="ttc" id="adsalgorithms-c_8h_html"><div class="ttname"><a href="dsalgorithms-c_8h.html">dsalgorithms-c.h</a></div><div class="ttdoc">dsalgorithms-c main entry point header</div></div>
+<div class="ttc" id="adsalgorithms-c_8h_html_a606da9899ac87a3e7c13e69c672091f3"><div class="ttname"><a href="dsalgorithms-c_8h.html#a606da9899ac87a3e7c13e69c672091f3">dsalgorithms_maxArrayInt</a></div><div class="ttdeci">int dsalgorithms_maxArrayInt(const int *array, size_t n)</div><div class="ttdoc">Find the maximum element in an array of integers.</div><div class="ttdef"><b>Definition</b> dsalgorithms-c.c:12</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+API</h1>
+<p>dsalgorithms-c is in super early development and only contains the following functions at the moment. Many more are on the way!</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Maximum Algorithms</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Function   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code><a class="el" href="dsalgorithms-c_8h.html#a6bfe4804c76cef66bc47d556dce95e5b">dsalgorithms_maxInt(int a, int b)</a></code>   </td><td class="markdownTableBodyNone">Returns the larger of <code>a</code> and <code>b</code>.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>dsalgorithms_maxArrayInt(int *array, size_t size)</code>   </td><td class="markdownTableBodyNone">Returns the maximum value in an integer array.   </td></tr>
+</table>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
