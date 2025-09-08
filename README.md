@@ -23,7 +23,7 @@ chmod +x install_dsalgorithms-c_debian_amd64_arm64.sh && ./install_dsalgorithms-
 The installer script will download the latest release packages, install via apt-get, and clean up downloaded files after installation.
 
 ## Uninstallation
-If the above script was used to install, or if you installed .deb packagas manually via apt:
+If the above script was used to install, or if you installed .deb packages manually via apt:
 ```bash
 sudo apt remove libdsalgorithms-c0 libdsalgorithms-c-dev
 ```
