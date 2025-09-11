@@ -46,5 +46,5 @@ dsalgorithms-c is in super early development and only contains the following fun
 ### Maximum Algorithms
 | Function | Description |
 |----------|-------------|
-| `dsalgorithms_maxInt(int a, int b)` | Returns the larger of `a` and `b`. |
-| `dsalgorithms_maxArrayInt(int *array, size_t size)` | Returns the maximum value in an integer array. |
+| `dsalgorithms_maxInt(const int a, const int b)` | Returns the larger of `a` and `b`. |
+| `dsalgorithms_maxArrayInt(const int *array, size_t size)` | Returns the maximum value in an integer array. |
